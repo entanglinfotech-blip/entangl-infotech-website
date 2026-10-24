@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Entangl Infotech provides IT support and infrastructure services for businesses in India.">
+  <meta name="theme-color" content="#0b1b35">
+  <title>Entangl Infotech | IT Support & Infrastructure</title>
+  <style>
+    :root{--navy:#0b1b35;--navy2:#102849;--cyan:#13b9ed;--blue:#087fc4;--ink:#14233c;--muted:#607086;--pale:#f3f8fc;--white:#fff;--line:#e2eaf2}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+    a{color:inherit;text-decoration:none}.container{width:min(1140px,92%);margin:auto}
+    .topbar{background:#071326;color:#cbd8e7;font-size:.88rem;padding:8px 0}.topbar .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.08em;color:var(--navy);line-height:1.1}
+    .brand-mark{width:43px;height:43px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--cyan),#3155dc);color:#fff;font-size:1.6rem;font-weight:800;box-shadow:0 5px 18px #13b9ed40}
+    .brand small{display:block;font-size:.65rem;letter-spacing:.34em;color:var(--blue);margin-top:5px}
+    nav{display:flex;align-items:center;gap:27px;font-size:.95rem;font-weight:600}nav a:hover{color:var(--blue)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:9px;padding:13px 19px;font-weight:750;cursor:pointer;transition:.2s}
+    .btn-primary{background:var(--cyan);color:#06182d;box-shadow:0 8px 22px #13b9ed35}.btn-primary:hover{transform:translateY(-2px);background:#47cdf3}
+    .btn-outline{border:1px solid #8aa4c3;color:#fff;background:transparent}.btn-outline:hover{background:#ffffff12}
+    .menu-btn{display:none;background:none;border:0;font-size:1.7rem;color:var(--navy)}
+    .hero{background:radial-gradient(circle at 82% 24%,#14527d 0,transparent 30%),linear-gradient(120deg,#07172d,#10294a 65%,#0c3154);color:#fff;overflow:hidden;position:relative}
+    .hero:after{content:"";position:absolute;width:460px;height:460px;border:1px solid #29bfee38;border-radius:50%;right:-120px;bottom:-280px;box-shadow:0 0 0 35px #29bfee0b,0 0 0 70px #29bfee08}
+    .hero-grid{min-height:550px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:48px;padding:76px 0;position:relative;z-index:1}
+    .eyebrow{display:inline-flex;gap:9px;align-items:center;color:#57d5f8;text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;font-weight:800}.eyebrow:before{content:"";width:25px;height:2px;background:var(--cyan)}
+    h1{font-size:clamp(2.7rem,5vw,4.7rem);line-height:1.07;letter-spacing:-.045em;margin:20px 0}.hero h1 span{color:#37c9f3}
+    .hero p{color:#d1deed;max-width:580px;font-size:1.12rem;margin:0 0 29px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap}
+    .hero-note{display:flex;align-items:center;gap:12px;margin-top:28px;color:#c4d4e6;font-size:.9rem}.pulse{width:9px;height:9px;background:#35d5a2;border-radius:50%;box-shadow:0 0 0 5px #35d5a21c}
+    .visual{min-height:330px;display:grid;place-items:center;position:relative}.orbit{width:min(330px,78vw);aspect-ratio:1;border:2px solid #20bfe9;border-radius:50%;display:grid;place-items:center;position:relative;box-shadow:0 0 50px #13b9ed1a,inset 0 0 45px #13b9ed10}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #8b9dff80;border-radius:50%;inset:24px;transform:rotate(35deg) scaleX(.7)}.orbit:after{inset:48px;transform:rotate(-35deg) scaleX(.7)}
+    .orbit-core{width:145px;height:145px;border-radius:34px;background:linear-gradient(145deg,#12c7ed,#2856d9);display:grid;place-items:center;font-size:5rem;font-weight:800;color:white;transform:rotate(-8deg);box-shadow:0 22px 60px #0005}.orbit-core span{transform:rotate(8deg)}
+    .float-card{position:absolute;background:#ffffff12;border:1px solid #ffffff28;backdrop-filter:blur(12px);padding:12px 15px;border-radius:12px;color:#fff;font-size:.88rem}.float-card b{display:block;color:#57d5f8;font-size:1rem}.fc1{top:20px;right:-4px}.fc2{bottom:30px;left:-12px}
+    section{padding:82px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 42px}.section-head .eyebrow{justify-content:center}.section-head h2{font-size:clamp(2rem,3.5vw,3rem);letter-spacing:-.035em;line-height:1.15;margin:15px 0}.section-head p{color:var(--muted);margin:0}
+    .services{background:var(--pale)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:27px;transition:.22s}.card:hover{transform:translateY(-5px);box-shadow:0 18px 45px #0b1b3510;border-color:#b5e9f7}.iconbox{width:52px;height:52px;border-radius:13px;background:#e6f8fe;color:#087fc4;display:grid;place-items:center;font-size:1.5rem;margin-bottom:19px}.card h3{margin:0 0 8px;font-size:1.18rem}.card p{margin:0;color:var(--muted);font-size:.96rem}
+    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}.about-panel{background:linear-gradient(145deg,#0b1b35,#174b74);color:#fff;border-radius:20px;padding:36px;min-height:330px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}.about-panel:after{content:"e";position:absolute;right:-20px;bottom:-105px;font-size:22rem;font-weight:900;color:#ffffff0a;line-height:1}.about-panel>*{position:relative;z-index:1}.about-panel h3{font-size:1.8rem;line-height:1.2;margin:0}.about-panel p{color:#c6d8e9}.mini-tag{font-size:.8rem;color:#61d7f7;letter-spacing:.12em;text-transform:uppercase;font-weight:800}.about-copy h2{font-size:clamp(2rem,3vw,2.8rem);line-height:1.15;letter-spacing:-.035em;margin:14px 0}.about-copy p{color:var(--muted)}.checks{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:24px}.check{display:flex;gap:10px;align-items:flex-start;font-weight:650;font-size:.94rem}.check span{color:#08a8d8;font-weight:900}
+    .process{background:#f7fafc}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{border-top:3px solid var(--cyan);padding:20px 18px;background:#fff;border-radius:0 0 13px 13px}.step .num{font-size:.78rem;letter-spacing:.12em;color:var(--blue);font-weight:900}.step h3{margin:8px 0;font-size:1.05rem}.step p{margin:0;color:var(--muted);font-size:.92rem}
+    .cta{padding:0 0 82px;background:#f7fafc}.cta-box{border-radius:22px;padding:48px;background:linear-gradient(120deg,#0b1b35,#124a72);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:28px}.cta-box h2{font-size:clamp(1.8rem,3vw,2.7rem);line-height:1.15;margin:0 0 10px}.cta-box p{color:#c7d8e8;margin:0;max-width:600px}
+    .contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px}.contact-info h2{font-size:2.5rem;line-height:1.15;margin:13px 0}.contact-info p{color:var(--muted)}.contact-item{display:flex;gap:14px;margin:24px 0}.contact-item .iconbox{flex:0 0 46px;width:46px;height:46px;margin:0}.contact-item b{display:block}.contact-item span{color:var(--muted);font-size:.94rem}
+    form{border:1px solid var(--line);border-radius:17px;padding:28px;box-shadow:0 14px 35px #0b1b3508}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{display:block;font-size:.88rem;font-weight:700;margin-bottom:6px}input,textarea,select{width:100%;border:1px solid #d8e2ed;border-radius:9px;padding:13px 12px;font:inherit;color:var(--ink);background:#fff;margin-bottom:16px}input:focus,textarea:focus,select:focus{outline:2px solid #13b9ed55;border-color:var(--cyan)}textarea{min-height:120px;resize:vertical}.form-help{font-size:.8rem;color:var(--muted);margin:10px 0 0}
+    footer{background:#071326;color:#d1deed;padding:42px 0 20px}.footer-main{display:flex;justify-content:space-between;gap:35px;flex-wrap:wrap;padding-bottom:30px}.footer-brand{color:#fff}.footer-main p{max-width:380px;color:#9fb1c6}.footer-links{display:flex;gap:20px;flex-wrap:wrap}.footer-links a:hover{color:var(--cyan)}.copyright{border-top:1px solid #ffffff1c;padding-top:18px;color:#91a5bc;font-size:.84rem;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:850px){nav{gap:15px}.hero-grid{grid-template-columns:1fr;gap:25px;padding:65px 0}.visual{min-height:300px}.cards{grid-template-columns:repeat(2,1fr)}.about-grid,.contact-grid{grid-template-columns:1fr;gap:32px}.steps{grid-template-columns:repeat(2,1fr)}.cta-box{align-items:flex-start;flex-direction:column}}
+    @media(max-width:620px){.topbar .container{justify-content:center}.nav{height:70px}.menu-btn{display:block}nav{display:none;position:absolute;left:0;right:0;top:70px;background:#fff;padding:20px 5%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:18px}nav.open{display:flex}.nav .btn{display:none}.hero-grid{padding:55px 0}.visual{min-height:250px}.orbit{width:245px}.orbit-core{width:110px;height:110px;font-size:3.8rem}.fc1{right:0;top:8px}.fc2{left:0;bottom:10px}section{padding:62px 0}.cards,.steps,.checks,.form-row{grid-template-columns:1fr}.cta{padding-bottom:62px}.cta-box{padding:30px 24px}form{padding:21px}.copyright{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>IT Support &amp; Infrastructure Solutions</span><span>Serving businesses across India</span></div></div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Entangl Infotech home"><span class="brand-mark">e</span><span>ENTANGL<small>INFOTECH</small></span></a>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu()">☰</button>
+      <nav id="navlinks"><a href="#home" onclick="closeMenu()">Home</a><a href="#about" onclick="closeMenu()">About</a><a href="#services" onclick="closeMenu()">Services</a><a href="#approach" onclick="closeMenu()">Our Approach</a><a href="#contact" onclick="closeMenu()">Contact</a></nav>
+      <a class="btn btn-primary" href="#contact">Talk to our team ↗</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Reliable technology. Real support.</div>
+          <h1>IT that works for you. <span>Business that moves forward.</span></h1>
+          <p>Entangl Infotech helps businesses keep their technology dependable with practical IT support and infrastructure services tailored to their needs.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#services">Explore our services ↗</a><a class="btn btn-outline" href="#contact">Contact us</a></div>
+          <div class="hero-note"><span class="pulse"></span> Responsive, business-focused IT support</div>
+        </div>
+        <div class="visual" aria-hidden="true"><div class="orbit"><div class="orbit-core"><span>e</span></div></div><div class="float-card fc1"><b>IT Support</b>Help when you need it</div><div class="float-card fc2"><b>Infrastructure</b>Built for reliable work</div></div>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head"><div class="eyebrow">What we do</div><h2>IT support that keeps your business moving</h2><p>From day-to-day technical assistance to core infrastructure, we help you keep business technology organised, reliable and ready to work.</p></div>
+        <div class="cards">
+          <article class="card"><div class="iconbox">⌘</div><h3>IT Helpdesk &amp; User Support</h3><p>Practical assistance for everyday computer, software, account and workplace technology issues.</p></article>
+          <article class="card"><div class="iconbox">▦</div><h3>IT Infrastructure</h3><p>Support for business IT environments, device setup, configuration and ongoing technology maintenance.</p></article>
+          <article class="card"><div class="iconbox">⌁</div><h3>Network &amp; Connectivity</h3><p>Help with business connectivity, network troubleshooting and keeping teams connected.</p></article>
+          <article class="card"><div class="iconbox">▣</div><h3>Device Setup &amp; Management</h3><p>Assistance with workstation deployment, system configuration and consistent device setup.</p></article>
+          <article class="card"><div class="iconbox">◇</div><h3>Software &amp; Account Support</h3><p>Help with business software, user access and routine account configuration tasks.</p></article>
+          <article class="card"><div class="iconbox">↻</div><h3>Maintenance &amp; Troubleshooting</h3><p>Structured troubleshooting and maintenance support to reduce avoidable technology disruption.</p></article>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container about-grid">
+        <div class="about-panel"><div class="mini-tag">About Entangl Infotech</div><h3>Technology should make work simpler—not harder.</h3><p>We focus on practical IT support that helps businesses work with confidence.</p><div class="mini-tag">Support • Infrastructure • Reliability</div></div>
+        <div class="about-copy"><div class="eyebrow">Your IT support partner</div><h2>Dependable support for everyday business technology.</h2><p>Entangl Infotech is focused on helping organisations manage their IT needs with clear communication, thoughtful troubleshooting and support aligned with business priorities.</p><p>We work to understand the issue, explain the options and help you take the next step with confidence.</p><div class="checks"><div class="check"><span>✓</span> Business-focused assistance</div><div class="check"><span>✓</span> Clear communication</div><div class="check"><span>✓</span> Practical problem-solving</div><div class="check"><span>✓</span> Support tailored to your needs</div></div></div>
+      </div>
+    </section>
+    <section class="process" id="approach">
+      <div class="container"><div class="section-head"><div class="eyebrow">Our approach</div><h2>A straightforward way to get IT help</h2><p>We aim to make the support process clear from the first conversation through resolution.</p></div>
+        <div class="steps"><div class="step"><div class="num">STEP 01</div><h3>Understand</h3><p>Tell us about your business, setup and technology challenge.</p></div><div class="step"><div class="num">STEP 02</div><h3>Assess</h3><p>We review the issue and discuss practical options with you.</p></div><div class="step"><div class="num">STEP 03</div><h3>Support</h3><p>We agree on the next steps and work through the support need.</p></div><div class="step"><div class="num">STEP 04</div><h3>Follow up</h3><p>We help clarify any next actions or ongoing support requirements.</p></div></div>
+      </div>
+    </section>
+    <section class="cta"><div class="container"><div class="cta-box"><div><h2>Need a dependable IT support partner?</h2><p>Let's discuss your IT environment and the support your business needs.</p></div><a class="btn btn-primary" href="#contact">Get in touch ↗</a></div></div></section>
+    <section id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info"><div class="eyebrow">Contact us</div><h2>Let's talk about your IT needs.</h2><p>Contact Entangl Infotech to discuss IT support and infrastructure services for your business.</p>
+          <div class="contact-item"><div class="iconbox">✉</div><div><b>Email</b><a href="mailto:entanglinfotech@gmail.com"><span>entanglinfotech@gmail.com</span></a></div></div>
+          <div class="contact-item"><div class="iconbox">☎</div><div><b>Phone</b><a href="tel:+919154333774"><span>+91 91543 33774</span></a></div></div>
+          <div class="contact-item"><div class="iconbox">⌖</div><div><b>Location</b><span>India</span></div></div>
+        </div>
+        <form id="contactForm">
+          <h3 style="margin:0 0 18px">Send an enquiry</h3>
+          <div class="form-row"><div><label for="name">Your name *</label><input id="name" name="name" required autocomplete="name" placeholder="Full name"></div><div><label for="company">Company</label><input id="company" name="company" autocomplete="organization" placeholder="Company name"></div></div>
+          <div class="form-row"><div><label for="email">Work email *</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="you@company.com"></div><div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+91"></div></div>
+          <label for="service">What do you need help with?</label><select id="service" name="service"><option>IT Support</option><option>IT Infrastructure</option><option>Network &amp; Connectivity</option><option>Device Setup</option><option>Maintenance &amp; Troubleshooting</option><option>Other enquiry</option></select>
+          <label for="message">How can we help? *</label><textarea id="message" name="message" required placeholder="Briefly describe your IT requirement"></textarea>
+          <button class="btn btn-primary" type="submit">Prepare email enquiry ↗</button>
+          <p class="form-help">This form opens your email application with the enquiry prepared. It does not submit data to a server.</p>
+          <p id="formStatus" class="form-help" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container"><div class="footer-main"><div><a class="brand footer-brand" href="#home"><span class="brand-mark">e</span><span>ENTANGL<small>INFOTECH</small></span></a><p>Business-focused IT support and infrastructure services. Helping technology work better for your business.</p></div><div><b>Explore</b><div class="footer-links" style="margin-top:13px"><a href="#about">About</a><a href="#services">Services</a><a href="#approach">Our approach</a><a href="#contact">Contact</a></div><p><a href="mailto:entanglinfotech@gmail.com">entanglinfotech@gmail.com</a><br><a href="tel:+919154333774">+91 91543 33774</a></p></div></div><div class="copyright"><span>© <span id="year"></span> Entangl Infotech. All rights reserved.</span><span>IT Support &amp; Infrastructure • India</span></div></div></footer>
+  <script>
+    function toggleMenu(){const n=document.getElementById('navlinks');const b=document.querySelector('.menu-btn');n.classList.toggle('open');b.setAttribute('aria-expanded',n.classList.contains('open'))}
+    function closeMenu(){document.getElementById('navlinks').classList.remove('open');document.querySelector('.menu-btn').setAttribute('aria-expanded','false')}
+    document.getElementById('year').textContent=new Date().getFullYear();
+    document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();const d=new FormData(this);const subject=encodeURIComponent('Website enquiry - '+d.get('service'));const body=encodeURIComponent('Name: '+d.get('name')+'\nCompany: '+(d.get('company')||'Not provided')+'\nEmail: '+d.get('email')+'\nPhone: '+(d.get('phone')||'Not provided')+'\nService: '+d.get('service')+'\n\nMessage:\n'+d.get('message'));document.getElementById('formStatus').textContent='Opening your email application…';window.location.href='mailto:entanglinfotech@gmail.com?subject='+subject+'&body='+body});
+  </script>
+</body>
+</html>
